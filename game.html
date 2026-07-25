@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>收集心心小游戏</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page game-page">
+    <div class="background-orb orb-one"></div>
+    <div class="background-orb orb-two"></div>
+    <div class="sparkles" aria-hidden="true"></div>
+    <div class="hearts-layer" aria-hidden="true"></div>
+
+    <main class="game-shell">
+      <section class="card game-card" aria-label="小游戏界面">
+        <div class="game-header">
+          <div>
+            <p class="eyebrow">帮助 Shinchan 收集心心</p>
+            <h1>收集 15 个心心吧！</h1>
+          </div>
+          <div class="stat-pill">⏰ <span id="timer">30</span>s</div>
+        </div>
+
+        <div class="score-row">
+          <div class="stat-pill">💖 分数 <span id="score">0</span></div>
+          <div class="stat-pill">🎯 目标 15</div>
+        </div>
+
+        <div id="gameArea" class="game-area" tabindex="0" aria-label="小游戏区域">
+          <div id="player" class="player"></div>
+          <div id="overlay" class="game-overlay" hidden></div>
+          <div id="introOverlay" class="intro-overlay">
+            <h2>玩个小游戏解锁更多</h2>
+            <p>游戏规则：<br />在 30 秒内收集 10 颗爱心</p>
+            <button id="startBtn" class="overlay-btn" type="button">开始</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/music.js"></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>
