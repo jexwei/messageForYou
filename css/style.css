@@ -441,12 +441,13 @@ button:focus-visible {
 }
 
 .photo-frame {
-  display: inline-block;
+  display: flex;
   padding: 8px;
   border-radius: 20px;
   background: linear-gradient(135deg, #fff, #ffd6e0);
   box-shadow: 0 12px 24px rgba(179, 92, 121, 0.16);
   border: 2px solid rgba(255, 255, 255, 0.85);
+  justify-content: center;
 }
 
 .scratch-card {
